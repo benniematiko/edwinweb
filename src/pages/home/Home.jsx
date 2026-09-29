@@ -1,74 +1,66 @@
 import React from 'react';
+import Hero from '../../components/hero/Hero';
+import Featured from '../../components/featured/Featured';
+import ServicesList from '../../components/services/ServicesList';
 import './Home.css';
+import { Link } from 'react-router-dom';
 
 function Home() {
-  const scrollToWorks = () => {
-    const worksSection = document.getElementById('works');
-    if (worksSection) {
-      worksSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <div className="home">
-      {/* Hero Section */}
-      <section className="hero">
-        <h1>Creative Graphic Designer</h1>
-        <p>I turn ideas into beautiful visual stories</p>
-        <button className="cta-button" onClick={scrollToWorks}>
-          View My Work
-        </button>
-      </section>
+      {/* Premium Hero - From our Hero component */}
+      <Hero />
 
-      {/* Featured Works Section */}
+      {/* Featured Works Section - Premium Wrapper */}
       <section className="works-preview" id="works">
-        <h2>Featured Works</h2>
-        <div className="works-grid">
-          <div className="work-card">
-            <div className="work-image">Project 1</div>
-            <h3>Brand Identity</h3>
-            <p>Logo and color system for a coffee shop</p>
-          </div>
-          <div className="work-card">
-            <div className="work-image">Project 2</div>
-            <h3>Poster Design</h3>
-            <p>Event poster for a music festival</p>
-          </div>
-          <div className="work-card">
-            <div className="work-image">Project 3</div>
-            <h3>Packaging</h3>
-            <p>Product packaging for organic snacks</p>
-          </div>
+        <div className="section-header">
+          <div className="section-badge">Selected Work</div>
+          <h2>Featured projects that <span>pop.</span></h2>
+          <p>Real work from my public folder - coffee brands, festivals & packaging that clients loved.</p>
+        </div>
+        
+        <Featured />
+        
+        <div className="center-btn">
+          <Link to="/works" className="premium-link">
+            Explore all works <span className="arrow">→</span>
+          </Link>
         </div>
       </section>
 
-      {/* Services Section */}
+      {/* Services Section - Premium Wrapper */}
       <section className="services-preview">
-        <h2>Services</h2>
-        <div className="services-grid">
-          <div className="service-card">
-            <div className="service-icon">🎨</div>
-            <h3>Logo Design</h3>
-            <p>Unique and memorable logos that represent your brand</p>
-          </div>
-          <div className="service-card">
-            <div className="service-icon">📦</div>
-            <h3>Branding</h3>
-            <p>Complete visual identity including colors, fonts, and guidelines</p>
-          </div>
-          <div className="service-card">
-            <div className="service-icon">🖼️</div>
-            <h3>Print Design</h3>
-            <p>Posters, business cards, packaging, and marketing materials</p>
-          </div>
+        <div className="section-header dark">
+          <div className="section-badge light">What I Do</div>
+          <h2>Services designed to make you <span>money.</span></h2>
+          <p>Not just pretty pixels. I build brands that sell.</p>
+        </div>
+        
+        <ServicesList limit={3} />
+
+        <div className="center-btn">
+          <Link to="/services" className="premium-link light">
+            View all services <span className="arrow">→</span>
+          </Link>
         </div>
       </section>
 
-      {/* Action Section */}
+      {/* Action Section - Premium CTA */}
       <section className="action-section">
-        <h2>Ready to start your project?</h2>
-        <p>Let’s create something amazing together. Get in touch today!</p>
-        <button className="cta-button">Contact Me</button>
+        <div className="action-card">
+          <div className="action-content">
+            <h2>Have an idea? <br/> Let's make it <span>real.</span></h2>
+            <p>I'm available for freelance. Email me and get a reply in 2 hours.</p>
+            <div className="action-btns">
+              <Link to="/contact" className="action-primary">Start a Project →</Link>
+              <a href="mailto:hello@maxendry.com" className="action-secondary">hello@maxendry.com</a>
+            </div>
+          </div>
+          <div className="action-visual">
+            <div className="visual-circle"></div>
+            <div className="visual-emoji">✦</div>
+          </div>
+        </div>
       </section>
     </div>
   );

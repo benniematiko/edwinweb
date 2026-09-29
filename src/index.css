@@ -1,4 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* THIS REMOVES ALL BORDER RADIUS EVERYWHERE */
+  border-radius: 0 !important;
+}
+
+:root {
+  --font-display: 'Instrument Serif', serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: #fcfcf9;
+  color: #0a0a14;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: -0.01em;
+}
+
+/* Headlines use the love font */
+h1, h2, h3 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  line-height: 0.9;
+}
+
+h1 i, h2 i, h2 span, h1 span {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* Smooth everything */
+a, button {
+  font-family: var(--font-body);
+  letter-spacing: -0.01em;
+}
+
+/* Remove radius from images and cards too */
+img {
+  border-radius: 0 !important;
 }

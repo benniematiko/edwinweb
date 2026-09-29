@@ -1,0 +1,41 @@
+/* Brutalist override - make all pills and buttons sharp but premium */
+.navbar-cta,
+.hero-btn,
+.filter-pill,
+.pill,
+.view-project-btn,
+.category-pill,
+.year-pill,
+.hero-badge,
+.section-badge,
+.works-badge,
+.logo-mark,
+.service-icon-premium,
+.avatar,
+.visual-circle,
+.footer-big-cta,
+.action-primary,
+.cta-button,
+.service-btn,
+.hero-image-card,
+.featured-card-premium,
+.service-card-premium,
+.work-card-premium,
+.work-img-wrap,
+.featured-image-wrapper,
+.contact-container,
+.contact-form input,
+.contact-form textarea,
+.mobile-menu,
+.hamburger span {
+  border-radius: 0 !important;
+}
+
+/* Make the big buttons feel sharp and intentional */
+.hero-btn.primary, .navbar-cta, .footer-big-cta {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  padding: 18px 32px;
+}
