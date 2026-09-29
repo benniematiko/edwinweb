@@ -57,7 +57,7 @@ function Hero() {
                 <span className="card-label">Featured Project</span>
                 <span className="card-year">2026</span>
               </div>
-              <img src="/project1.jpg" alt="Main work" onError={(e) => e.target.src = 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe'} />
+              <img src="/njerigacuri.jpeg" alt="Main work" onError={(e) => e.target.src = 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe'} />
               <div className="card-bottom">
                 <h4>Coffee Brand Identity</h4>
                 <p>Branding / Packaging</p>
