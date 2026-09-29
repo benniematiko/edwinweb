@@ -1,0 +1,120 @@
+/* This is the main container - like the big table where we put our menu */
+.services-container {
+  min-height: 100vh;
+  padding: 80px 20px;
+  background-color: #f8f9ff;
+}
+
+/* Header section - the big sign at the top of the menu */
+.services-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.services-title {
+  font-size: 48px;
+  font-weight: 800;
+  color: #1a1a2e;
+  margin-bottom: 15px;
+}
+
+.services-subtitle {
+  font-size: 18px;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* The grid - like a tray that holds 3 lunchboxes in a row */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Each service card - like one lunchbox / menu item */
+.service-card {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  border: 2px solid #eee;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  border-color: #6c63ff;
+  box-shadow: 0 20px 40px rgba(108, 99, 255, 0.15);
+}
+
+.service-icon {
+  font-size: 50px;
+  margin-bottom: 20px;
+  background-color: #f0efff;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.service-card-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 12px;
+}
+
+.service-card-desc {
+  font-size: 15px;
+  color: #777;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.service-button {
+  background-color: #1a1a2e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.service-button:hover {
+  background-color: #6c63ff;
+}
+
+/* Responsive Design - Making it look good on a small phone! */
+/* When screen is smaller than 900px - show 2 cards in a row */
+@media (max-width: 900px) {
+ .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+ .services-title {
+    font-size: 38px;
+  }
+}
+
+/* When screen is smaller than 600px - show 1 card in a row */
+@media (max-width: 600px) {
+ .services-grid {
+    grid-template-columns: 1fr;
+  }
+ .services-container {
+    padding: 60px 15px;
+  }
+ .services-title {
+    font-size: 32px;
+  }
+}
