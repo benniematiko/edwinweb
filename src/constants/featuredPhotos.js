@@ -55,6 +55,13 @@ const featuredPhotos = [
     description: 'Organic juice packaging that sells on shelf',
     category: 'Packaging'
   },
+  {
+    id: 9,
+    image: '/flyer3.jpeg',
+    title: 'Flyer Design',
+    description: 'Organic juice packaging that sells on shelf',
+    category: 'Packaging'
+  },
 ];
 
 export default featuredPhotos;
