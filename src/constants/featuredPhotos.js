@@ -60,8 +60,59 @@ const featuredPhotos = [
     image: '/flyer3.jpeg',
     title: 'Flyer Design',
     description: 'Organic juice packaging that sells on shelf',
-    category: 'Packaging'
+    category: 'Design'
   },
+  {
+    id: 10,
+    image: '/flyer5.jpeg',
+    title: 'Flyer Design',
+    description: 'Organic juice packaging that sells on shelf',
+    category: 'Design'
+  },
+  {
+    id: 11,
+    image: '/flyer6.jpeg',
+    title: 'Flyer Design',
+    description: 'Organic juice packaging that sells on shelf',
+    category: 'Design'
+  },
+  {
+    id: 12,
+    image: '/cmboya.jpeg',
+    title: 'Flyer Design',
+    description: 'Organic juice packaging that sells on shelf',
+    category: 'Design'
+  },
+  {
+    id: 13,
+    image: '/chamachangu.jpeg',
+    title: 'Flyer Design',
+    description: 'Organic juice packaging that sells on shelf',
+    category: 'Design'
+  },
+  
+  {
+    id: 14,
+    image: '/chamachangumen.jpeg',
+    title: 'Flyer Design',
+    description: 'Organic juice packaging that sells on shelf',
+    category: 'Design'
+  },
+  {
+    id: 15,
+    image: '/chakula.jpeg',
+    title: 'Flyer Design',
+    description: 'Organic juice packaging that sells on shelf',
+    category: 'Design'
+  },
+  {
+    id: 15,
+    image: '/socialmedia.jpeg',
+    title: 'Flyer Design',
+    description: 'Organic juice packaging that sells on shelf',
+    category: 'Socialmedia'
+  },
+  
 ];
 
 export default featuredPhotos;

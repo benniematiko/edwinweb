@@ -77,8 +77,8 @@ function Contact() {
 
         <div className="contact-info">
           <h3>My Info</h3>
-          <p><strong>Email:</strong> hello@maxendry.com</p>
-          <p><strong>Phone:</strong> +123 456 7890</p>
+          <p><strong>Email:</strong> edwineomedo95@gmail.com</p>
+          <p><strong>Phone:</strong> +254 742 764795</p>
           <p><strong>Location:</strong> Nairobi, Kenya</p>
           <div className="contact-emoji">📬 Let's create together!</div>
         </div>
