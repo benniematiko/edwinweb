@@ -49,9 +49,18 @@ function Navbar() {
 
       <nav className={`navbar ${scrolled? 'scrolled' : ''} ${isOpen? 'menu-open' : ''}`}>
         <div className="navbar-container">
-          <div className="navbar-logo">
+          {/* <div className="navbar-logo">
             <Link to="/">
               <div className="logo-mark">M</div>
+              <span>{contactInfo.brand}</span>
+            </Link>
+          </div> */}
+
+        
+
+          <div className="navbar-logo">
+            <Link to="/">
+              <img src="/edwinlogo.jpeg" alt={contactInfo.brand} className="logo-mark" />
               <span>{contactInfo.brand}</span>
             </Link>
           </div>

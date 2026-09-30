@@ -12,6 +12,9 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
+        {/* Grain Texture Overlay */}
+        <div className="grain-overlay"></div>
+        
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
