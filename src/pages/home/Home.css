@@ -1,10 +1,12 @@
 .home {
   width: 100%;
   background-color: #fcfcf9;
+  overflow-x: hidden;
 }
 
 /* Shared Section Styles */
-.works-preview, .services-preview {
+.works-preview, 
+.services-preview {
   max-width: 1400px;
   margin: 0 auto;
   padding: 100px 2rem;
@@ -15,6 +17,7 @@
   margin: 0 auto 60px;
   text-align: center;
 }
+
 .section-badge {
   display: inline-block;
   background-color: white;
@@ -28,11 +31,13 @@
   color: #0a0a14;
   margin-bottom: 20px;
 }
+
 .section-badge.light {
   background-color: #1a1a2e;
   border-color: #2a2a4a;
   color: white;
 }
+
 .section-header h2 {
   font-size: clamp(32px, 4vw, 48px);
   font-weight: 800;
@@ -41,20 +46,24 @@
   color: #0a0a14;
   margin-bottom: 16px;
 }
+
 .section-header.dark h2 {
   color: white;
 }
+
 .section-header h2 span {
   background: linear-gradient(90deg, #e94560 0%, #ff8a5b 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+
 .section-header p {
   font-size: 17px;
   line-height: 1.6;
   color: #777;
 }
+
 .section-header.dark p {
   color: #999;
 }
@@ -66,13 +75,17 @@
   border-radius: 32px;
   margin: 0 16px;
 }
-.services-subtitle { display: none; } /* we use new header now */
+
+.services-subtitle { 
+  display: none; 
+}
 
 .center-btn {
   display: flex;
   justify-content: center;
   margin-top: 48px;
 }
+
 .premium-link {
   display: inline-flex;
   align-items: center;
@@ -84,13 +97,16 @@
   padding-bottom: 6px;
   transition: gap 0.3s ease;
 }
+
 .premium-link.light {
   color: white;
   border-color: rgba(255,255,255,0.3);
 }
+
 .premium-link:hover {
   gap: 20px;
 }
+
 .premium-link .arrow {
   font-size: 18px;
 }
@@ -103,17 +119,20 @@
   padding: 0.9rem 2rem;
   border-radius: 100px;
   font-weight: 600;
+  transition: all 0.3s ease;
 }
+
 .cta-button.outline:hover {
   background-color: #1a1a2e;
   color: white;
 }
 
-/* Premium Action Card */
+/* Premium Action Card - THIS WAS YOUR UNSTYLED SECTION */
 .action-section {
   padding: 40px 16px 80px;
   background-color: #fcfcf9;
 }
+
 .action-card {
   max-width: 1200px;
   margin: 0 auto;
@@ -126,7 +145,9 @@
   gap: 40px;
   position: relative;
   overflow: hidden;
+  border: 1px solid #1a1a2e;
 }
+
 .action-content h2 {
   font-size: clamp(32px, 4vw, 56px);
   font-weight: 900;
@@ -135,20 +156,26 @@
   color: white;
   margin-bottom: 20px;
 }
+
 .action-content h2 span {
   color: #e94560;
 }
+
 .action-content p {
   color: #999;
   font-size: 18px;
+  line-height: 1.6;
   margin-bottom: 32px;
   max-width: 420px;
 }
+
 .action-btns {
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
+  align-items: center;
 }
+
 .action-primary {
   background-color: white;
   color: #0a0a14;
@@ -156,24 +183,37 @@
   border-radius: 100px;
   text-decoration: none;
   font-weight: 700;
+  font-size: 15px;
   transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
 }
+
 .action-primary:hover {
   background-color: #e94560;
   color: white;
+  transform: translateY(-2px);
 }
+
 .action-secondary {
   color: #777;
   text-decoration: none;
   padding: 16px 10px;
   font-weight: 500;
+  transition: color 0.3s ease;
 }
+
+.action-secondary:hover {
+  color: white;
+}
+
 .action-visual {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .visual-circle {
   width: 320px;
   height: 320px;
@@ -182,32 +222,40 @@
   filter: blur(20px);
   opacity: 0.5;
 }
+
 .visual-emoji {
   position: absolute;
   font-size: 120px;
   color: white;
+  line-height: 1;
 }
 
 @media (max-width: 900px) {
-  .works-preview, .services-preview {
+  .works-preview, 
+  .services-preview {
     padding: 60px 1.5rem;
   }
+
   .services-preview {
     margin: 0 8px;
     border-radius: 24px;
   }
+
   .action-card {
     grid-template-columns: 1fr;
     padding: 40px 28px;
     text-align: center;
   }
+
   .action-content p {
     margin-left: auto;
     margin-right: auto;
   }
+
   .action-btns {
     justify-content: center;
   }
+
   .action-visual {
     display: none;
   }

@@ -79,7 +79,7 @@ function Contact() {
           <h3>My Info</h3>
           <p><strong>Email:</strong> edwineomedo95@gmail.com</p>
           <p><strong>Phone:</strong> +254 742 764795</p>
-          <p><strong>Location:</strong> Nairobi, Kenya</p>
+          <p><strong>Location:</strong> Kenyatta Avenue, Nairobi</p>
           <div className="contact-emoji">📬 Let's create together!</div>
         </div>
       </div>

@@ -106,7 +106,7 @@ const featuredPhotos = [
     category: 'Design'
   },
   {
-    id: 15,
+    id: 16,
     image: '/socialmedia.jpeg',
     title: 'Flyer Design',
     description: 'Organic juice packaging that sells on shelf',

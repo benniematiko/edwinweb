@@ -5,27 +5,27 @@ import './Works.css';
 // Add more projects to make gallery full
 const allWorks = [
   ...featuredPhotos,
-  {
-    id: 4,
-    image: '/project4.jpg',
-    title: 'Nairobi Apparel Drop',
-    description: 'Streetwear brand lookbook & IG kit',
-    category: 'Social'
-  },
-  {
-    id: 5,
-    image: '/project1.jpg',
-    title: 'Bloom Beauty Logo',
-    description: 'Minimal logo for skincare startup',
-    category: 'Branding'
-  },
-  {
-    id: 6,
-    image: '/project2.jpg',
-    title: 'Tech Summit Kenya',
-    description: 'Conference branding & stage design',
-    category: 'Print'
-  }
+  // {
+  //   id: 4,
+  //   image: '/project4.jpg',
+  //   title: 'Nairobi Apparel Drop',
+  //   description: 'Streetwear brand lookbook & IG kit',
+  //   category: 'Social'
+  // },
+  // {
+  //   id: 5,
+  //   image: '/project1.jpg',
+  //   title: 'Bloom Beauty Logo',
+  //   description: 'Minimal logo for skincare startup',
+  //   category: 'Branding'
+  // },
+  // {
+  //   id: 6,
+  //   image: '/project2.jpg',
+  //   title: 'Tech Summit Kenya',
+  //   description: 'Conference branding & stage design',
+  //   category: 'Print'
+  // }
 ];
 
 function Works() {
